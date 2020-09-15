@@ -127,15 +127,15 @@ var data_resources = [
 
                         {No: 10,
                         NumInventario: '5193820',
-                        Name: '',
-                        Brand: 'Philips',
-                        Model: '58081 PIANO',
-                        Price: '$3,500',
-                        DateOfPurchase: '12/05/2020',
-                        Description: 'Lámpara de techo LED con diseño tipo piano',
+                        Name: 'Osciloscopio',
+                        Brand: 'Digilens',
+                        Model: 'OSC9923',
+                        Price: '$8,500',
+                        DateOfPurchase: '12/05/2010',
+                        Description: 'Osciloscopio con 2 entradas y la posibilidad para grabar los datos',
                         Comments: 'Usado',
-                        Photo: 'lampara_led.jpg',
-                        Purpose: 'Servicio administrativo',
+                        Photo: 'osciloscopio.jpg',
+                        Purpose: 'Docencia',
                         Category: 'Electrónica'},
                     ]
 
