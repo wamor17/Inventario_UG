@@ -1,0 +1,13 @@
+
+body{
+    background-color: rgb(220, 220, 220);
+}
+
+.color-navbar{
+/*    background-color: #003057 !important; rgb(0, 48, 87)*/
+    background: linear-gradient(180deg, rgb(0, 48, 87) 0%, rgb(0, 48, 87) 95%, rgb(181, 163, 106) 95%, rgb(181, 163, 106) 100% );
+}
+
+.brand-logo{
+    font-family: Novecento wide;
+}
