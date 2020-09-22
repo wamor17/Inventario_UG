@@ -65,13 +65,33 @@ descripcion varchar(50) NOT NULL,
 primary key(id_categoria)
 );
 
+CREATE TABLE IF NOT EXISTS sub_categoria (
+id_subcategoria int NOT NULL auto_increment,
+id_categoria int NOT NULL,
+nombre varchar(50) NOT NULL,
+descripcion varchar(50) NOT NULL,
+primary key(id_subcategoria),
+foreign key(id_categoria) references categoria(id_categoria)
+);
+
+CREATE TABLE IF NOT EXISTS sub_division (
+id_subdivision int NOT NULL auto_increment,
+id_subcategoria int NOT NULL,
+nombre varchar(50) NOT NULL,
+descripcion varchar(50) NOT NULL,
+primary key(id_subdivision),
+foreign key(id_subcategoria) references sub_categoria(id_subcategoria)
+);
+
 CREATE TABLE IF NOT EXISTS objeto (
 id_objeto int NOT NULL auto_increment,
 id_categoria int NOT NULL,
 id_empleado int NOT NULL,
+no_activofijo int NOT NULL, 
 nombre varchar(50) NOT NULL,
 marca varchar(50) NOT NULL,
 modelo varchar(50) NOT NULL,
+no_serie varchar(50) NOT NULL,
 descripcion varchar(100) NOT NULL,
 precio smallint NOT NULL,
 foto varchar(50) NOT NULL,
