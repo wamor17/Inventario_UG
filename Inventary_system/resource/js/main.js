@@ -8,8 +8,7 @@ $(document).ready(function(){
 });
 
 var data_resources = [
-                       {No: 1,
-                        NumInventario: '0129393',
+                       {NumInventario: '0129393',
                         Name: 'Laptop DELL',
                         Brand: 'Dell',
                         Model: 'Inspiron 13-5378',
@@ -21,8 +20,7 @@ var data_resources = [
                         Purpose: 'Tutoría',
                         Category: 'Electrónica'},
 
-                        {No: 2,
-                        NumInventario: '21382930',
+                        {NumInventario: '21382930',
                         Name: 'Escritorio',
                         Brand: 'IKEA',
                         Model: 'HSV234',
@@ -34,8 +32,7 @@ var data_resources = [
                         Purpose: 'Docencia',
                         Category: 'Muebles'},
 
-                        {No: 3,
-                        NumInventario: '92830918',
+                        {NumInventario: '92830918',
                         Name: 'Silla',
                         Brand: 'IKEA',
                         Model: 'SL90',
@@ -47,8 +44,7 @@ var data_resources = [
                         Purpose: 'Docencia',
                         Category: 'Muebles'},
 
-                        {No: 4,
-                        NumInventario: '92830918',
+                        {NumInventario: '92830918',
                         Name: 'Cable HDMI',
                         Brand: 'HP',
                         Model: 'Z250',
@@ -60,8 +56,7 @@ var data_resources = [
                         Purpose: 'Servicio administrativo',
                         Category: 'Electrónica'},
 
-                        {No: 5,
-                        NumInventario: '6582309',
+                        {NumInventario: '6582309',
                         Name: 'Impresora 3D',
                         Brand: 'bq',
                         Model: 'P3D-2000',
@@ -73,8 +68,7 @@ var data_resources = [
                         Purpose: 'Investigación',
                         Category: 'Electrónica'},
 
-                        {No: 6,
-                        NumInventario: '2103948',
+                        {NumInventario: '2103948',
                         Name: 'Proyetor',
                         Brand: 'PANASONIC',
                         Model: 'PD3-3000',
@@ -86,8 +80,7 @@ var data_resources = [
                         Purpose: 'Docencia',
                         Category: 'Electrónica'},
 
-                        {No: 7,
-                        NumInventario: '7712938',
+                        {NumInventario: '7712938',
                         Name: 'Sillón',
                         Brand: 'IKEA',
                         Model: 'SLLN-200',
@@ -99,8 +92,7 @@ var data_resources = [
                         Purpose: 'Recreación',
                         Category: 'Muebles'},
 
-                        {No: 8,
-                        NumInventario: '5193820',
+                        {NumInventario: '5193820',
                         Name: 'Impresora multifuncional',
                         Brand: 'EPSON',
                         Model: 'L230',
@@ -112,8 +104,7 @@ var data_resources = [
                         Purpose: 'Servicio administrativo',
                         Category: 'Electrónica'},
 
-                        {No: 9,
-                        NumInventario: '5193820',
+                        {NumInventario: '5193820',
                         Name: 'Lámpara fluorescente',
                         Brand: 'Philips',
                         Model: '58081 PIANO',
@@ -125,8 +116,7 @@ var data_resources = [
                         Purpose: 'Servicio administrativo',
                         Category: 'Electrónica'},
 
-                        {No: 10,
-                        NumInventario: '5193820',
+                        {NumInventario: '5193820',
                         Name: 'Osciloscopio',
                         Brand: 'Digilens',
                         Model: 'OSC9923',
@@ -141,8 +131,7 @@ var data_resources = [
 
 var data_table = '';
 for(var i=0; i<data_resources.length; i++){
-    data_table = data_table +'<tr> <td>'+data_resources[i].No+'</td>'+
-                      '<td>'+data_resources[i].NumInventario+'</td>'+                  
+    data_table = data_table +'<tr> <td>'+data_resources[i].NumInventario+'</td>'+                  
                       '<td>'+data_resources[i].Name+'</td>'+
                       '<td>'+data_resources[i].Brand+'</td>'+
                       '<td>'+data_resources[i].Model+'</td>'+
