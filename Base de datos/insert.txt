@@ -1,0 +1,1 @@
+INSERT INTO (`UserName`, `Password`, `Name`, `FirstLastName`, `SecondLastName`, `TypeUser`) VALUES ('wamor17', 'UtnCboV1', 'Walter Alejandro', 'Moreno', 'Ramírez', 'Root');
