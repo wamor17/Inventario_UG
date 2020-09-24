@@ -61,7 +61,7 @@ foreign key(id_empleado) references empleado(id_empleado)
 CREATE TABLE IF NOT EXISTS categoria (
 id_categoria int NOT NULL auto_increment,
 nombre varchar(50) NOT NULL,
-descripcion varchar(50) NOT NULL,
+descripcion varchar(500) NOT NULL,
 primary key(id_categoria)
 );
 
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS sub_categoria (
 id_subcategoria int NOT NULL auto_increment,
 id_categoria int NOT NULL,
 nombre varchar(50) NOT NULL,
-descripcion varchar(50) NOT NULL,
+descripcion varchar(500) NOT NULL,
 primary key(id_subcategoria),
 foreign key(id_categoria) references categoria(id_categoria)
 );
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS sub_division (
 id_subdivision int NOT NULL auto_increment,
 id_subcategoria int NOT NULL,
 nombre varchar(50) NOT NULL,
-descripcion varchar(50) NOT NULL,
+descripcion varchar(500) NOT NULL,
 primary key(id_subdivision),
 foreign key(id_subcategoria) references sub_categoria(id_subcategoria)
 );
@@ -87,16 +87,17 @@ CREATE TABLE IF NOT EXISTS objeto (
 id_objeto int NOT NULL auto_increment,
 id_categoria int NOT NULL,
 id_empleado int NOT NULL,
-no_activofijo int NOT NULL, 
-nombre varchar(50) NOT NULL,
-marca varchar(50) NOT NULL,
-modelo varchar(50) NOT NULL,
-no_serie varchar(50) NOT NULL,
-descripcion varchar(100) NOT NULL,
-precio smallint NOT NULL,
-foto varchar(50) NOT NULL,
-observaciones varchar(50),
-fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+no_inventario bigint NOT NULL,
+no_activofijo bigint NOT NULL, 
+nombre varchar(500) NOT NULL,
+marca varchar(200) NOT NULL,
+modelo varchar(200) NOT NULL,
+no_serie varchar(500) NOT NULL,
+descripcion varchar(500) NOT NULL,
+precio double NOT NULL,
+fecha_compra DATE,
+foto varchar(1000) NOT NULL,
+observaciones varchar(500),
 primary key(id_objeto),
 foreign key(id_categoria) references categoria(id_categoria),
 foreign key(id_empleado) references empleado(id_empleado)
@@ -114,7 +115,7 @@ foreign key(id_objeto) references objeto(id_objeto)
 
 CREATE TABLE IF NOT EXISTS finalidad(
 id_finalidad int NOT NULL auto_increment,
-descripcion varchar(50) NOT NULL,
+descripcion varchar(500) NOT NULL,
 primary key(id_finalidad)
 );
 
