@@ -7,6 +7,7 @@ INSERT INTO entidad(id_sede, nombre) VALUES(1, 'DEM Yuriria');
 INSERT INTO empleado(id_puesto, id_entidad, nombre, ape_paterno, ape_materno, fecha_registro) VALUES(1, 1, 'Geovani', 'Hernández', 'Gómez', '2015-01-08');
 INSERT INTO categoria(nombre, descripcion) VALUES('Muebles', 'Escritorios, mesas, sillas, bancos, sillones');
 INSERT INTO categoria(nombre, descripcion) VALUES('Electrónica', 'Computadoras, Cables, Impresoras, Monitores, pantallas, drones');
+INSERT INTO categoria(nombre, descripcion) VALUES('Investigación', 'Tubos de ensayo, fuentes de energía, osciloscopios');
 INSERT INTO categoria(nombre, descripcion) VALUES('Deportes', 'Balones, conos, caminadora, red de portería');
 INSERT INTO categoria(nombre, descripcion) VALUES('Electrodomesticos', 'Horno micro-ondas, refrijerador, estufa');
 INSERT INTO categoria(nombre, descripcion) VALUES('Vehículos', 'Carros, motos, lanchas, vicicletas');

@@ -86,11 +86,10 @@ foreign key(id_subcategoria) references sub_categoria(id_subcategoria)
 CREATE TABLE IF NOT EXISTS objeto (
 id_objeto int NOT NULL auto_increment,
 id_categoria int NOT NULL,
-id_subcategoria int NOT NULL,
-id_subdivision int NOT NULL,
 id_empleado int NOT NULL,
 no_inventario bigint NOT NULL,
 no_activofijo bigint NOT NULL, 
+nombre varchar(500) NOT NULL,
 marca varchar(200) NOT NULL,
 modelo varchar(200) NOT NULL,
 no_serie varchar(500) NOT NULL,
@@ -101,8 +100,6 @@ foto varchar(1000) NOT NULL,
 observaciones varchar(500),
 primary key(id_objeto),
 foreign key(id_categoria) references categoria(id_categoria),
-foreign key(id_subcategoria) references sub_categoria(id_subcategoria),
-foreign key(id_subdivision) references sub_division(id_subdivision),
 foreign key(id_empleado) references empleado(id_empleado)
 );
 
