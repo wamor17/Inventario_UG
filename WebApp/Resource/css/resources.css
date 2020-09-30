@@ -13,10 +13,16 @@
 }
 
 .collapsible-header:hover{
+    /*background-color: rgb(230, 230, 230); */
+}
+
+.collapsible-active{
     background-color: rgb(230, 230, 230);
 }
 
-
+.collapsible-inactive{
+    background-color: white;
+}
 
 
 

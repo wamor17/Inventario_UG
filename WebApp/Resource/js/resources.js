@@ -12,44 +12,7 @@ $(document).ready(function(){
         if( Data.Status ){
             txtUser = '¡Datos recibidos!';
             M.toast({html: txtUser, classes: 'rounded green darken-2'});
-
-            var items = "", c=0;
-            var middle = Math.round( (getSizeOf(Data)-1)/2 );
-
-            for(var i=0; i<(getSizeOf(Data)-1); i++){
-
-                items = items + "<li class='row-resource-options'>";
-                items = items +     "<div class='collapsible-header'><i class='material-icons'>assignment_turned_in</i>" + Data[i].modelo + "</div>" +
-                                    "<div class='collapsible-body'>"+
-                                        "<table class='striped'>"+
-                                            "<tbody>"+
-                                                "<tr> <td> <strong> No. inventario:   </strong> </td> <td>"    + Data[i].no_inventario + "</td> </tr>" +
-                                                "<tr> <td> <strong> Marca:            </strong> </td> <td>"    + Data[i].marca + "</td> </tr>" +
-                                                "<tr> <td> <strong> Modelo:           </strong> </td> <td>"    + Data[i].modelo + "</td> </tr>" +
-                                                "<tr> <td> <strong> Costo:            </strong> </td> <td> $ " + Data[i].precio + "</td> </tr>" +
-                                                "<tr> <td> <strong> Fecha de compra:  </strong> </td> <td>"    + Data[i].fecha_compra + "</td> </tr>" +
-                                                "<tr> <td> <strong> Observaciones:    </strong> </td> <td>"    + Data[i].observaciones + "</td> </tr>" +
-                                                "<tr> <td> <strong> Foto:             </strong> </td> <td>"    + Data[i].foto + "</td> </tr>" +
-                                                "<tr> <td> <strong> Descripción:      </strong> </td> <td>"    + Data[i].descripcion + "</td> </tr>" +
-                                            "</tbody>" +
-                                        "</table>" +
-                                    "</div>"+
-                                "</li>";
-
-                if( c == middle ){
-                    $('.resources-container0').append(items);
-                    items = "";
-                }else if( c == (getSizeOf(Data)-2) ){
-                    $('.resources-container1').append(items);
-                    items = "";
-                }
-
-                c++;
-            }
-
-            
-
-
+            ShowDataResources(Data);
         }else{
             M.toast({html: "¡Error!", classes: 'rounded red'});
         }
@@ -65,30 +28,45 @@ function getSizeOf(obj) {
     return size;
 };
 
-function ShowDataResources(Data){    
+function ShowDataResources(Data){
+    var items = "", c=0;
+    var middle = Math.round( (getSizeOf(Data)-1)/2 );
 
-    data_text = "<tr>";
+    for(var i=0; i<(getSizeOf(Data)-1); i++){
 
-    console.log(Data.size);
+        items = items + "<li>";
+        items = items +     "<div class='collapsible-header'><i class='material-icons'>assignment_turned_in</i>" + Data[i].subdivision_nombre + "</div>" +
+                            "<div class='collapsible-body'>"+
+                                "<table class='striped'>"+
+                                    "<tbody>"+
+                                        "<tr> <td> <strong> No. inventario:   </strong> </td> <td>"    + Data[i].no_inventario + "</td> </tr>" +
+                                        "<tr> <td> <strong> Marca:            </strong> </td> <td>"    + Data[i].marca + "</td> </tr>" +
+                                        "<tr> <td> <strong> Modelo:           </strong> </td> <td>"    + Data[i].modelo + "</td> </tr>" +
+                                        "<tr> <td> <strong> Costo:            </strong> </td> <td> $ " + Data[i].precio + "</td> </tr>" +
+                                        "<tr> <td> <strong> Fecha de compra:  </strong> </td> <td>"    + Data[i].fecha_compra + "</td> </tr>" +
+                                        "<tr> <td> <strong> Observaciones:    </strong> </td> <td>"    + Data[i].observaciones + "</td> </tr>" +
+                                        "<tr> <td> <strong> Foto:             </strong> </td> <td>"    + Data[i].foto + "</td> </tr>" +
+                                        "<tr> <td> <strong> Descripción:      </strong> </td> <td>"    + Data[i].descripcion + "</td> </tr>" +
+                                    "</tbody>" +
+                                "</table>" +
+                            "</div>"+
+                        "</li>";
 
-    size = 0;
-    for( i in Data ){
-        data_text = data_text + "<td>" + Data[i].no_inventario + "</td>" 
-                                "<td>" + Data[i].nombre + "</td>"
-                                "<td>" + Data[i].marca + "</td>"
-                                "<td>" + Data[i].modelo + "</td>"
-                                "<td>" + "$ "+ Data[i].precio + "</td>"
-                                "<td>" + Data[i].fecha_compra + "</td>"
-                                "<td>" + Data[i].descripcion + "</td>"
-                                "<td>" + Data[i].observaciones + "</td>"
-                                "<td>" + Data[i].foto + "</td>";
-        size++;
+        if( c == middle ){
+            $('.resources-container0').append(items);
+            items = "";
+        }else if( c == (getSizeOf(Data)-2) ){
+            $('.resources-container1').append(items);
+            items = "";
+        }
+
+        c++;
     }
-
-    data_text = data_text + "</tr>";
-    
-    $('.table-resources').append(data_text);
 }
+
+$(' ul>li, ul.resources-container1 ').on('click', function(){
+    console.log(  );
+});
 
 /* INSERT ROWS IN A TABLE WITH HTML
 data_text = data_text + "<tr class='row-resource-options'>";

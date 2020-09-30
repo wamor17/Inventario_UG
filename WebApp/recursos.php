@@ -42,6 +42,7 @@
 
               <div class="row">
                 <div class="col m6 l6">
+                <h5>Computadora</h5>
                   <ul class="collapsible popout resources-container0">
                   </ul>
                 </div>
