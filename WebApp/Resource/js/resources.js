@@ -19,7 +19,7 @@ $(document).ready(function(){
             for(var i=0; i<(getSizeOf(Data)-1); i++){
 
                 items = items + "<li class='row-resource-options'>";
-                items = items +     "<div class='collapsible-header'><i class='material-icons'>assignment_turned_in</i>" + Data[i].nombre + "</div>" +
+                items = items +     "<div class='collapsible-header'><i class='material-icons'>assignment_turned_in</i>" + Data[i].modelo + "</div>" +
                                     "<div class='collapsible-body'>"+
                                         "<table class='striped'>"+
                                             "<tbody>"+
