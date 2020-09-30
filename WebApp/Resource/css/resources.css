@@ -1,0 +1,22 @@
+
+.menu-text-color li > a{
+    color: rgb(0, 48, 87) !important;
+}
+
+.collapsible-body{
+    background-color: rgb(250, 250, 250);
+    padding: 5px 20px 15px 20px !important;
+}
+
+.table-resources-options:hover {
+    background-color: black !important;
+}
+
+.collapsible-header:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+
+

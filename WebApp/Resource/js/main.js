@@ -7,6 +7,25 @@ $(document).ready(function(){
     $('.datepicker').datepicker();
 });
 
+
+var action = '__allResources';
+
+$.post('Controller/ResourcesController.php', { Action: action }, function(response) {
+    var Data = JSON.parse( response );
+    console.log( " Resources => ", Data );
+
+    if( Data.Status === "Correct" ){
+        localStorage.setItem("User", JSON.stringify(Data) );
+        txtUser = '¡Datos recibidos!';
+        M.toast({html: txtUser, classes: 'rounded green darken-2'});
+        //setTimeout(function(){ window.location.assign( Data.URL ); }, 1500);
+    }else{
+        M.toast({html: "¡Error!", classes: 'rounded red'});
+    }
+});
+
+
+/*
 var data_resources = [
                        {NumInventario: '0129393',
                         Name: 'Laptop DELL',
@@ -146,4 +165,4 @@ for(var i=0; i<data_resources.length; i++){
 }
 
 $('.table-resources').empty().append(data_table);
-
+*/

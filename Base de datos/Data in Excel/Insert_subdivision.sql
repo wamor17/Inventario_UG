@@ -1,50 +1,5 @@
 USE inventarioUG;
 
-INSERT INTO puesto(nombre, descripcion, fecha) VALUES('Profesor de tiempo completo (PTC)', 'Profesor con contrato de tiempo completo encargado de investigación, docencia, vinculación, etc', '2015-01-25');
-INSERT INTO campus(nombre) VALUES('Irapuato-Salamanca');
-INSERT INTO sede(id_campus, nombre) VALUES(1, 'Yuriria');
-INSERT INTO entidad(id_sede, nombre) VALUES(1, 'DEM Yuriria');
-INSERT INTO empleado(id_puesto, id_entidad, nombre, ape_paterno, ape_materno, fecha_registro) VALUES(1, 1, 'Geovani', 'Hernández', 'Gómez', '2015-01-08');
-INSERT INTO categoria(nombre, descripcion) VALUES('Muebles', 'Escritorios, mesas, sillas, bancos, sillones');
-INSERT INTO categoria(nombre, descripcion) VALUES('Electrónica', 'Computadoras, Cables, Impresoras, Monitores, pantallas, drones');
-INSERT INTO categoria(nombre, descripcion) VALUES('Investigación', 'Tubos de ensayo, fuentes de energía, osciloscopios');
-INSERT INTO categoria(nombre, descripcion) VALUES('Deportes', 'Balones, conos, caminadora, red de portería');
-INSERT INTO categoria(nombre, descripcion) VALUES('Electrodomesticos', 'Horno micro-ondas, refrijerador, estufa');
-INSERT INTO categoria(nombre, descripcion) VALUES('Vehículos', 'Carros, motos, lanchas, vicicletas');
-INSERT INTO categoria(nombre, descripcion) VALUES('Herramientas', 'Palas, martillos, taladros, desarmadores');
-
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Computadora', 'Toda clase de computadora');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Impresora', 'Tipos de impresora: tinta, láse o 3D');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Dron', '"Drones programables');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Smartphone', 'Smartphones y Tablets');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Smartwatch', 'Relojes inteligentes');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Smartpen ', 'Lápices inteligentes');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Pantalla o monitor', 'Pantallas o monitores para computadoras');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Mesa táctil  ', 'Pantalla táctil de grandes dimensiones');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Teclado ', 'Teclado para cualquier tipo de computadora');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Mouse ', 'Mouse para cualquier tipo de computadora');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Telefono ', 'Teléfonos alámbricos o inalámbricos de oficina');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Cámara ', '"Cámara profesional');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Sillón ', 'Sillón para sala o recepción');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Escritorio ', 'Escritorio de trabajo para oficina');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Archivero ', 'Todo tipo de archiveros');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Estante ', 'Todo tipo de estantes');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Pizarrón ', 'Todo tipo de pizarrones');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Librero ', 'Librero de cualquier tamaño y material');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Mesa', 'Cualquier tipo de mesa para comedor o cafetería');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Silla', 'Cualquier tipo de silla');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Banco ', 'Cualquier tipo de banco');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Unidad Almacenamiento ', '"Unidades tipo SSD');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(3, 'Seguidor de ojos ', 'Dispositivo desarrollado para seguir los ojos');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Audifonos ', 'Cualquier tipo de audífonos');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(1, 'Anaquel ', 'Cualquier tipo de anaquel');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(3, 'Kit diagnostico', 'Kit de diagnóstico para equipos de eletrónica');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Fotocopiadora', 'Impresora para copiar e imprimir');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Proyector ', 'Proyector de cualquier tipo');
-INSERT INTO sub_categoria(id_categoria, nombre, descripcion) VALUES(2, 'Pantalla multitouch ', 'Pantalla touch para conectar a una computadora');
-
-INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(1, 'Desktop', 'Computadora de escritorio convencional con CPU');
-INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(1, 'Laptop', 'Computadora portatil en las categorias: laptop y ultrabook');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(1, 'Servidor', 'Computadora especializada para el alto rendimiento');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(1, 'Mini-PC', '"Computadora de formato pequeño tipo: Raspberry PI');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(1, 'All-In-One', 'Computadora en la cual el CPU está embebido en un case junto al monitor');
@@ -100,6 +55,3 @@ INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(25, 'Anaqu
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(24, 'Diadema ', 'Diadema para audífonos');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(24, 'Audifonos inalambricos ', 'Audífonos de tipo inalámbricos con tecnología Bluetooth o WiFi para la transmisión de datos');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(24, 'Auriculares ', 'Audífonos de tipo alámbricos con jack de 3.5mm');
-
-SELECT * FROM sub_division;
-
