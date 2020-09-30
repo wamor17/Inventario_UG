@@ -1,0 +1,59 @@
+ID_Subcategoria,Nombre,Descripción,
+1,1,Ninguna ,Ninguna 
+2,2,Desktop,Computadora de escritorio convencional con CPU
+3,2,Laptop,Computadora portatil en las categorias: laptop y ultrabook
+4,2,Servidor,Computadora especializada para el alto rendimiento
+5,2,Mini-PC,"Computadora de formato pequeño tipo: Raspberry PI, Intel NUC o Apple Mini"
+6,2,All-In-One,Computadora en la cual el CPU está embebido en un case junto al monitor
+7,3,Impresora 3D ,Impresora encargada de imprimir objetos en tercera dimensión
+8,3,Impresora laser,Impresora con tecnologia láser para imprimir
+9,3,Multifuncional ,"Impresora con tecnología de titna o láser capaz de imprimir, copiar y scanear documentos"
+10,12,Telefono IP ,Teléfono configurable con una red interna al cual se le asigna una dirección IP
+11,12,Telefono convencional,Teléfono alámbrico o inalámbrico para casa u oficina
+12,13,Cámara fotografica,Dispositivo fabricado únicamente para capturar fotografías
+13,13,Cámara de video ,Dispositivo fabricado para grabar videos
+14,13,Cámara multifuncional ,Dispositivo fabricado para capturar fotografías y videos
+15,8,Pantalla LED,Pantallas o monitores con tecnología LED en su matriz 
+16,8,Pantalla LCD,Pantallas o monitos con tecnología LCD
+17,8,Pantalla Plasma,Pantallas  o monitores con tecnología Plasma
+18,4,Dron programable ,Dron programable para tareas en específico
+19,4,Dron modular ,Dron con la capacidad de intercambiar sus partes de manera sencilla 
+20,23,Unidad de estado sólido,Dispositivo de almacenamiento de datos de memoria flash
+21,23,Disco duro ,Dispotivios de almacenamiento de datos mediante discos magnéticos
+22,23,Memoria USB ,Dispositivo de almacenamiento con tecnología Flash en formato USB
+23,23,Micro SD,Dispositivo de almacenamiento con tecnología Flash en formato MicroSD
+24,14,Sillón ejecutivo ,Sillón tipo ejecutivo
+25,14,Sillón taburete ,Sillón tipo taburete
+26,14,Sillón rinconero ,Sillón tipo rinconero
+27,14,Sillón modular ,Sillón modular compuesto de diferentes piezas
+28,15,Escritorio de madera ,Escritorio construido con madera
+29,15,Escritorio de metal ,Escritorio con estructura de metal
+30,15,Escritorio ejecutivo ,Escrotiro tipo ejecutivo
+31,16,Archivero de madera,Archivero construido completamente de madera
+32,16,Archivero de metal ,Archivero construido completamente de metal
+33,16,Archivero escolar ,Archivero tipo escolar
+34,17,Estante de madera,Estante construido completamente con madera
+35,17,Estante de metal ,Estante construido completamente con madera
+36,18,Pizarrón blanco ,Pizarrón blanco para salón de clases
+37,18,Pizarrón cuadriculado,Pizarrón blanco con cuadricula guía
+38,18,Pizarrón de cristal ,Pizarrón transparente hecho de vidrio
+39,19,Librero bajo ,Librero de tamaño reducido
+40,19,Librero modular ,Librero constituido de varias partes separables e intercambiables
+41,19,Librero empotrado ,Librero asegurado o empotrado a la pared
+42,20,Mesa redonda ,Mesa con forma redonda
+43,20,Mesa de madera ,Mesa construida con madera
+44,20,Mesa de metal ,Mesa construida con metal
+45,20,Mesa de plastico ,Mesa construida con plástico
+46,22,Banco de metal ,Banco construido con metal
+47,22,Banco de madera ,Banco construido con madera
+48,22,Banco de plastico ,Banco construido de plástico
+49,21,Silla metalica ,Silla construida con metal
+50,21,Silla de madera ,Silla construida con madera
+51,21,Silla ejecutiva ,Silla tipo ejecutivo
+52,21,Silla de plastico ,Silla construida con plástico
+53,21,Silla secretarial ,Silla tipo secretarial
+54,26,Anaquel de madera,Anaquel construido mayormente con madera
+55,26,Anaquel de metal,Anaquel construido mayormente metal
+56,25,Diadema ,Diadema para audífonos
+57,25,Audifonos inalambricos ,Audífonos de tipo inalámbricos con tecnología Bluetooth o WiFi para la transmisión de datos
+58,25,Auriculares ,Audífonos de tipo alámbricos con jack de 3.5mm

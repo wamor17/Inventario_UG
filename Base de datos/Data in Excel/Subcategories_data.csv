@@ -1,0 +1,31 @@
+ID_Categoria,Nombre,Descripción
+1,Niguna,Ninguna 
+3,Computadora,Toda clase de computadoras
+3,Impresora,"Tipos de impresoras: tinta, láser o 3D"
+3,Dron,"Drones programables, modular, etc"
+3,Smartphone,Smartphones y Tablets
+3,Smartwatch,Relojes inteligentes
+3,Smartpen ,Lápices inteligentes
+3,Pantalla o monitor,Pantallas o monitores para computadoras
+3,Mesa táctil  ,Pantalla táctil de grandes dimensiones
+3,Teclado ,Teclado para cualquier tipo de computadora
+3,Mouse ,Mouse para cualquier tipo de computadora
+3,Telefono ,Teléfonos alámbricos o inalámbricos de oficina
+3,Cámara ,"Cámara profesional, webcam o cualquier otra"
+2,Sillón ,Sillón para sala o recepción
+2,Escritorio ,Escritorio de trabajo para oficina
+2,Archivero ,Todo tipo de archiveros
+2,Estante ,Todo tipo de estantes
+2,Pizarrón ,Todo tipo de pizarrones
+2,Librero ,Librero de cualquier tamaño y material
+2,Mesa,Cualquier tipo de mesa para comedor o cafetería
+2,Silla,Cualquier tipo de silla
+2,Banco ,Cualquier tipo de banco
+3,Unidad Almacenamiento ,"Unidades tipo SSD, HDD, Micro SD, USB, etc"
+3,Seguidor de ojos ,Dispositivo desarrollado para seguir los ojos
+3,Audifonos ,Cualquier tipo de audífonos
+2,Anaquel ,Cualquier tipo de anaquel
+3,Kit diagnostico,Kit de diagnóstico para equipos de eletrónica
+3,Fotocopiadora,Impresora para copiar e imprimir
+3,Proyector ,Proyector de cualquier tipo
+3,Pantalla multitouch ,Pantalla touch para conectar a una computadora
