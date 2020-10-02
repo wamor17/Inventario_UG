@@ -16,7 +16,7 @@
             $ConnClass = new ConnectionClass();
             $Connection = $ConnClass->OpenConnection();
 
-            $Query = "SELECT categoria.nombre AS categoria_nombre, sub_categoria.nombre AS subcategoria_nombre, sub_division.nombre AS subdivision_nombre,
+            $Query = "SELECT objeto.id_objeto, categoria.nombre AS categoria_nombre, sub_categoria.nombre AS subcategoria_nombre, sub_division.nombre AS subdivision_nombre,
                             empleado.nombre AS nombre_empleado, empleado.ape_paterno AS empleado_apaterno, empleado.ape_materno AS empleado_amaterno,
                             objeto.no_inventario, objeto.no_activofijo, objeto.no_serie, objeto.marca, objeto.modelo,
                             objeto.descripcion, objeto.precio, objeto.fecha_compra, objeto.foto, objeto.observaciones

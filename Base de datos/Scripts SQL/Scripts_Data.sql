@@ -67,6 +67,8 @@ INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(3, 'Impres
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(3, 'Multifuncional ', '"Impresora con tecnología de titna o láser capaz de imprimir');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(12, 'Telefono IP ', 'Teléfono configurable con una red interna al cual se le asigna una dirección IP');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(12, 'Telefono convencional', 'Teléfono alámbrico o inalámbrico para casa u oficina');
+INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(5, 'Smartphone', 'Teléfono inteligente');
+INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(5, 'Tablet', 'Tablet inteligente');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(13, 'Cámara fotografica', 'Dispositivo fabricado únicamente para capturar fotografías');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(13, 'Cámara de video ', 'Dispositivo fabricado para grabar videos');
 INSERT INTO sub_division(id_subcategoria, nombre, descripcion) VALUES(13, 'Cámara multifuncional ', 'Dispositivo fabricado para capturar fotografías y videos');
