@@ -58,14 +58,14 @@ function ShowCategoriesAndResources(){
     var Data_Categories = JSON.parse( localStorage.getItem("Categories") );
     var Data_Resources = JSON.parse( localStorage.getItem("Resources") );
     var num_categories = getSizeOf(Data_Categories)-1, num_resources = (getSizeOf(Data_Resources)-1);
-    var items = "", components = "", text_box = "", counter = 0;
+    var items = "", components = "", text_box = "", icon = "", counter = 0;
 
     for(var i=1; i<num_categories; i++){
 
         for(var j=0; j<num_resources; j++){
             if( Data_Categories[i].nombre === Data_Resources[j].categoria_nombre ){
                 counter++;
-                items = items + "<a href='#' class='collection-item black-text'> <p class='id_resource'>"+Data_Resources[j].id_objeto+"</p>"+Data_Resources[j].subdivision_nombre + " " + Data_Resources[j].marca + " " + Data_Resources[j].modelo +"<i class='material-icons right'></i></a>";
+                items = items + "<a class='collection-item black-text'> <p class='id_resource'>"+ Data_Resources[j].id_objeto+"</p>"+Data_Resources[j].subdivision_nombre + " " + Data_Resources[j].marca + " " + Data_Resources[j].modelo +"<i class='material-icons right'></i></a>";
             }
         }
 
@@ -75,10 +75,15 @@ function ShowCategoriesAndResources(){
                             "<label for='filter_"+Data_Categories[i].nombre+"'>Filtrar resultados</label>"+
                         "</div>"+
                     "</ul>"; */
+        
+        if( Data_Categories[i].nombre === "Muebles" )
+            icon = "weekend";
+        else if( Data_Categories[i].nombre === "Electrónica" )
+            icon = "devices_other";
 
         if( counter !== 0 ){
             components = components + "<li>";
-            components = components +     "<div class='collapsible-header'><i class='material-icons'>assignment_turned_in</i>" + Data_Categories[i].nombre + "</div>" +
+            components = components +     "<div class='collapsible-header'><i class='material-icons'>"+icon+"</i>" + Data_Categories[i].nombre + "</div>" +
                                             "<div class='collapsible-body'>" + //text_box + 
                                                 "<ul class='collection'>" + items + "</ul>"+
                                             "</div>"+

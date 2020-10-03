@@ -21,6 +21,7 @@
 
 .collection-item:hover{
     background-color: white !important;
+    cursor: pointer;
 }
 
 .table-resources-options:hover {
@@ -31,15 +32,21 @@
     max-width: 35% !important;
 }
 
-.card .card-image img{
-    top: 15% !important;
+.card-image{
+    padding-left: 20px;
+    display: flex !important;
+    align-items: center !important;
 }
 
 .card .card-content {
-    padding: 10px 24px 0px 24px;
+    padding: 20px 24px 20px 24px;
     border-radius: 0 0 2px 2px;
 }
 
+.card-content-resources{
+    position: fixed !important;
+    top: 20%;
+}
 
 
 
