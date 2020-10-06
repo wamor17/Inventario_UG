@@ -16,7 +16,7 @@
             $ConnClass = new ConnectionClass();
             $Connection = $ConnClass->OpenConnection();
 
-            $Query = "SELECT categoria.nombre FROM categoria;";
+            $Query = "SELECT categoria.nombre FROM categoria ORDER BY categoria.nombre ASC;";
             $ResultSet = $this->Connection->query($Query);
             $rows = $ResultSet->num_rows;
 

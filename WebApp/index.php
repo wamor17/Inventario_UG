@@ -11,22 +11,22 @@
 </head>
     <body>
 
-      <nav class="color-navbar">
-            <div class="row">
-                <div class="col m1 l1"></div>
-                <div class="col s12 m10 l10">
-                    <div class="nav-wrapper">
-                        <a href="index.html" class="brand-logo"> Información personal </a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li> <a class='dropdown-trigger' href='#' data-target='dbMenu'>Menu de opciones <i class="material-icons right">arrow_drop_down</i></a> </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col m1 l1"></div>
-            </div>
-        </nav>
+		<nav class="color-navbar">
+			<div class="row">
+				<div class="col m1 l1"></div>
+				<div class="col s12 m10 l10">
+					<div class="nav-wrapper">
+						<a href="index.php" class="brand-logo"> <img class="img-logo" src="Resource/images/escudo-horizontal-png.png" alt="UG"> <!--Recursos a resguardo--> </a>
+						<ul id="nav-mobile menu-options" class="right hide-on-med-and-down">
+							<li> <a class='dropdown-trigger menu-options' href='#' data-target='dbMenu'>Menu de opciones <i class="material-icons right">arrow_drop_down</i></a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="col m1 l1"></div>
+			</div>
+		</nav>
 
-        <ul id="dbMenu" class="dropdown-content menu-text-color">
+		<ul id="dbMenu" class="dropdown-content menu-text-color">
 			<li><a href="index.php">Información personal</a></li>
 			<li><a href="recursos.php">Recursos a resguardo</a></li>
 			<li><a href="categorias.php">Categor&iacute;as</a></li>
@@ -155,8 +155,17 @@
 			<div class="col m1 l1"></div>
 		</div>
 
-        <script src="Resource/js/jquery-3.5.1.min.js"></script>
-        <script src="Resource/js/materialize.min.js"></script>
-        <script src="Resource/js/main.js"></script>
+		<footer class="page-footer page-footer-personal-information">
+			<div class="footer-copyright">
+			<div class="container">
+				© 2020 Copyright
+				<a class="grey-text text-lighten-4 right" href="https://github.com/wamor17/Inventario_UG">Github page</a>
+			</div>
+			</div>
+		</footer>
+
+		<script src="Resource/js/jquery-3.5.1.min.js"></script>
+		<script src="Resource/js/materialize.min.js"></script>
+		<script src="Resource/js/main.js"></script>
     </body>
 </html>

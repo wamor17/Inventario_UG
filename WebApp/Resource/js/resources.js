@@ -26,8 +26,8 @@ function getAllCategories(){
         var Data = JSON.parse( response );
 
         if( Data.Status ){            
-            txtUser = '¡Datos recibidos!';
-            M.toast({html: txtUser, classes: 'rounded green darken-2'});
+            // txtUser = '¡Datos recibidos!';
+            // M.toast({html: txtUser, classes: 'rounded green darken-2'});
 
             localStorage.setItem("Categories", JSON.stringify(Data) );
         }else{
@@ -44,8 +44,8 @@ function getAllResourcesByEmployee(){
         Data_Resources = Data;
         
         if( Data.Status ){            
-            txtUser = '¡Datos recibidos!';
-            M.toast({html: txtUser, classes: 'rounded green darken-2'});
+            //txtUser = '¡Datos recibidos!';
+            //M.toast({html: txtUser, classes: 'rounded green darken-2'});
 
             localStorage.setItem("Resources", JSON.stringify(Data) );
         }else{
@@ -79,21 +79,32 @@ function ShowCategoriesAndResources(){
         if( Data_Categories[i].nombre === "Muebles" )
             icon = "weekend";
         else if( Data_Categories[i].nombre === "Electrónica" )
-            icon = "devices_other";
+            icon = "memory";
+        else if( Data_Categories[i].nombre === "Deportes" )
+            icon = "directions_run";
+        else if( Data_Categories[i].nombre === "Electrodomesticos" )
+            icon = "kitchen";
+        else if( Data_Categories[i].nombre === "Vehículos" )
+            icon = "directions_car";
+        else if( Data_Categories[i].nombre === "Herramientas" )
+            icon = "build";
+        else
+            icon = "assignment";
 
-        if( counter !== 0 ){
-            components = components + "<li>";
-            components = components +     "<div class='collapsible-header'><i class='material-icons'>"+icon+"</i>" + Data_Categories[i].nombre + "</div>" +
-                                            "<div class='collapsible-body'>" + //text_box + 
-                                                "<ul class='collection'>" + items + "</ul>"+
-                                            "</div>"+
-                                      "</li>";
+        if( counter === 0 )
+            items = "<p class='no-elements-collections black-text'> Sin elementos en esta categoría <i class='material-icons right'></i></p>";
 
-            $('.categories-container').append(components);
-            components = "";
-            items = "";
-            counter = 0;
-        }
+        components = components + "<li>";
+        components = components +     "<div class='collapsible-header'><i class='material-icons'>"+icon+"</i><strong>" + Data_Categories[i].nombre + " ("+counter+")" + "</strong></div>" +
+                                        "<div class='collapsible-body'>" + //text_box + 
+                                            "<ul class='collection'>" + items + "</ul>"+
+                                        "</div>"+
+                                    "</li>";
+
+        $('.categories-container').append(components);
+        components = "";
+        items = "";
+        counter = 0;
 
     }
 
@@ -151,7 +162,7 @@ $(document).on('click', '.collection > a', function(){
     $('.no_serie').text(Data_Resources[index].no_serie);
     $('.marca').text(Data_Resources[index].marca);
     $('.modelo').text(Data_Resources[index].modelo);
-    $('.precio').text(Data_Resources[index].precio);
+    $('.precio').text("$ "+Data_Resources[index].precio);
     $('.fecha_compra').text(Data_Resources[index].fecha_compra);
     $('.observaciones').text(Data_Resources[index].observaciones);
     $('.descripcion').text(Data_Resources[index].descripcion);

@@ -1,8 +1,4 @@
 
-.menu-text-color li > a{
-    color: rgb(0, 48, 87) !important;
-}
-
 .id_resource{
     display: none;
 }
@@ -45,7 +41,10 @@
 
 .card-content-resources{
     position: fixed !important;
-    top: 20%;
+}
+
+.no-elements-collections{
+    margin-left: 20px !important;
 }
 
 
