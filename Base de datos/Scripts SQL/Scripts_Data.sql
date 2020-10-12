@@ -1,9 +1,9 @@
 USE inventarioUG;
 
 INSERT INTO puesto(nombre, descripcion, fecha) VALUES('Profesor de tiempo completo (PTC)', 'Profesor con contrato de tiempo completo encargado de investigación, docencia, vinculación, etc', '2015-01-25');
-INSERT INTO campus(nombre) VALUES('Irapuato-Salamanca');
-INSERT INTO sede(id_campus, nombre) VALUES(1, 'Yuriria');
-INSERT INTO entidad(id_sede, nombre) VALUES(1, 'DEM Yuriria');
+INSERT INTO campus(nombre) 					   VALUES('Irapuato-Salamanca');
+INSERT INTO sede(id_campus, nombre) 		   VALUES(1, 'Yuriria');
+INSERT INTO entidad(id_sede, nombre) 		   VALUES(1, 'DEM Yuriria');
 INSERT INTO empleado(id_puesto, id_entidad, nombre, ape_paterno, ape_materno, nue, fecha_registro) VALUES(1, 1, 'Geovani', 'Hernández', 'Gómez', 810320, '2015-01-08');
 
 INSERT INTO finalidad(descripcion) VALUES('Docencia');

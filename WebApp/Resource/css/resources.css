@@ -16,7 +16,7 @@
 }
 
 .collection-item:hover{
-    background-color: white !important;
+    background-color: rgb(230, 230, 230) !important;
     cursor: pointer;
 }
 
@@ -45,6 +45,33 @@
 
 .no-elements-collections{
     margin-left: 20px !important;
+}
+
+.break-word-description{
+    word-wrap: break-word !important;
+}
+
+.btn-delete-resource{
+    left: 8px !important;
+}
+
+.btn-edit-resource{
+    left: 0 !important;
+}
+
+.title-resources{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white !important;
+}
+
+.title-resources:hover{
+    background-color: white !important;
+    cursor: initial;
+}
+
+.collection-title-resource{
+    margin-bottom: 0px !important;
 }
 
 

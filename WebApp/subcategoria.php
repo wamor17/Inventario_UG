@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Resource/css/materialize.min.css">
     <link rel="stylesheet" href="Resource/css/main.css">
-    <link rel="stylesheet" href="Resource/css/categories.css">
+    <link rel="stylesheet" href="Resource/css/subcategories.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title> Inventario UG </title>
@@ -36,24 +36,28 @@
 
         <br>
         <div class="row">
-            <div class="col m1 l1"> </div>
+            <div class="col m2 l2"> </div>
             
-            <div class="col m10 l10">
+            <div class="col m8 l8">
 
               <div class="container">
-                <ul class="collection with-header categories-container">
-                  <li class="collection-header center-align"><h4>Categorías <a class="btn-floating btn-medium waves-effect blue darken-2 right"><i class="material-icons">add</i></a> </h4></li>  
+        
+                <ul class="collection with-header subcategories-container">
+                    <li class="collection-header center-align">
+                        <h4> Subcategorías <a class="btn-floating btn-medium waves-effect blue darken-2 right"><i class="material-icons">add</i></a> </h4>
+                    </li>
                 </ul>
+       
               </div>
 
             </div>
 
-            <div class="col m1 l1"> </div>
+            <div class="col m2 l2"> </div>
         </div>
 
         <script src="Resource/js/jquery-3.5.1.min.js"></script>
         <script src="Resource/js/materialize.min.js"></script>
         <script src="Resource/js/main.js"></script>
-        <script src="Resource/js/categories.js"></script>
+        <script src="Resource/js/subcategories.js"></script>
     </body>
 </html>

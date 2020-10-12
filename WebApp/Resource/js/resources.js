@@ -5,6 +5,10 @@ $(document).ready(function(){
     $('.dropdown-trigger').dropdown();
     $('.datepicker').datepicker();
 
+    // Actions over other HTML elements
+    $('.btn-delete-resource').hide();
+    $('.btn-edit-resource').hide();
+
     getAllResourcesByEmployee();
     getAllCategories();
     ShowCategoriesAndResources();
@@ -60,7 +64,7 @@ function ShowCategoriesAndResources(){
     var num_categories = getSizeOf(Data_Categories)-1, num_resources = (getSizeOf(Data_Resources)-1);
     var items = "", components = "", text_box = "", icon = "", counter = 0;
 
-    for(var i=1; i<num_categories; i++){
+    for(var i=0; i<num_categories; i++){
 
         for(var j=0; j<num_resources; j++){
             if( Data_Categories[i].nombre === Data_Resources[j].categoria_nombre ){
@@ -111,7 +115,6 @@ function ShowCategoriesAndResources(){
 }
 
 $(document).on('change', '#filter_Electrónica', function(){
-
     console.log( $(this) );
 });
 
@@ -133,7 +136,8 @@ $(document).on('click', '.collapsible-header', function(){
     $('.fecha_compra')       .text(" - ");
     $('.observaciones')      .text(" - ");
     $('.descripcion')        .text(" - ");
-
+    $('.btn-delete-resource').hide();
+    $('.btn-edit-resource').hide();
 });
 
 $(document).on('click', '.collection > a', function(){
@@ -166,6 +170,8 @@ $(document).on('click', '.collection > a', function(){
     $('.fecha_compra').text(Data_Resources[index].fecha_compra);
     $('.observaciones').text(Data_Resources[index].observaciones);
     $('.descripcion').text(Data_Resources[index].descripcion);
+    $('.btn-delete-resource').show();
+    $('.btn-edit-resource').show();
 });
 
 /*

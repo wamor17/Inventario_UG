@@ -2,7 +2,7 @@
 <?php
     include "../Model/ConnectionClass.php";
 
-    class CategoriesClass{
+    class SubCategoriesClass{
         public $ConnectClass;
         public $Connection;
         public $Result;
@@ -12,11 +12,11 @@
             $this->Connection = $this->ConnectClass->OpenConnection();
         }
 
-        function GET_AllCategories(){
+        function GET_AllSubCategories(){
             $ConnClass = new ConnectionClass();
             $Connection = $ConnClass->OpenConnection();
 
-            $Query = "SELECT * FROM categoria WHERE categoria.id_categoria != '1' ORDER BY categoria.nombre ASC;";
+            $Query = "SELECT * FROM sub_categoria WHERE sub_categoria.id_subcategoria != '1' ORDER BY sub_categoria.nombre ASC;";
             $ResultSet = $this->Connection->query($Query);
             $rows = $ResultSet->num_rows;
 

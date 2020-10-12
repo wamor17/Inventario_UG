@@ -30,7 +30,7 @@
 			<li><a href="index.php">Información personal</a></li>
 			<li><a href="recursos.php">Recursos a resguardo</a></li>
 			<li><a href="categorias.php">Categor&iacute;as</a></li>
-			<li><a href="finalidad_subdivision.html">Finalidad y subdivisión</a></li>
+			<li><a href="subcategoria.php">Subcategoria</a></li>
 		</ul>
 
 		<br>

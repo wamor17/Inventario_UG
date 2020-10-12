@@ -30,7 +30,7 @@
         <li><a href="index.php">Información personal</a></li>
         <li><a href="recursos.php">Recursos a resguardo</a></li>
         <li><a href="categorias.php">Categor&iacute;as</a></li>
-        <li><a href="finalidad_subdivision.html">Finalidad y subdivisión</a></li>
+        <li><a href="subcategoria.php">Subcategoria</a></li>
       </ul>
 
       <br>
@@ -38,19 +38,35 @@
           <div class="col m1 l1"></div>
           
           <div class="col s12 m10 l10">
+
             <div class="row">
               <div class="col s12 m4 l4">
+                <ul class="collection collection-title-resource">
+                  <li class="collection-item title-resources">
+                      <h5 class="center-align title-resources">
+                          <strong>Recursos por categoría</strong>
+                          <a class="btn-floating btn-small waves-effect blue darken-2 right">
+                            <i class="material-icons">add</i>
+                          </a>
+                      </h5>
+                  </li>
+                </ul>
                 <ul class="collapsible popout categories-container">
                 </ul>
               </div>
-              <div class="col s12 m8 l8">
-                <div class="card horizontal card-content-resources hoverable">
+              <div class="col s12 m7 l7">
+
+                <div class="card horizontal card-content-resources">
                   <div class="card-image">
-                    <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-6.png">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdgk3xXIZ20ss5c3c8bsIhLKbSsXNi5kM-BQ&usqp=CAU">
                   </div>
+
                   <div class="card-stacked">
                     <div class="card-content">
-
+                      <span class="card-title">
+                          <button class='btn-floating btn-small waves-effect red right btn-delete-resource'>      <i class='material-icons'>delete</i>   </button>
+                          <button class='btn-floating btn-small waves-effect orange right btn-edit-resource'>   <i class='material-icons'>edit</i>     </button> 
+                      </span>
                       <table class="striped">
 
                         <thead>
@@ -109,18 +125,18 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="center-align descripcion" colspan="4"> - </td>
+                            <td class="center-align descripcion break-word-description" colspan="4"> - </td>
                           </tr>
                         </tbody>
 
                       </table>
-
                     </div>
-
                   </div>
                 </div>
+
               </div>
             </div>
+
           </div>
             
           <div class="col m1 l1"></div>

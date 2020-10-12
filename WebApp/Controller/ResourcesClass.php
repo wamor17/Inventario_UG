@@ -25,7 +25,7 @@
                         INNER JOIN sub_categoria ON sub_categoria.id_subcategoria = objeto.id_subcategoria)
                         INNER JOIN sub_division ON sub_division.id_subdivision = objeto.id_subdivision)
                         INNER JOIN empleado ON empleado.id_empleado = objeto.id_empleado)
-                        WHERE objeto.id_empleado = ".$ID.";";
+                        WHERE objeto.id_empleado = ".$ID.";"; // ORDER BY sub_division.nombre ASC
             
             //$Query = "SELECT * FROM objeto WHERE id_empleado = ".$ID.";";
             $ResultSet = $this->Connection->query($Query);

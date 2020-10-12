@@ -14,7 +14,16 @@ WHERE objeto.id_empleado = 1;
 
 SELECT *FROM sub_division;
 SELECT *FROM sub_categoria;
+SELECT *FROM categoria;
 SELECT *FROM objeto;
+DESCRIBE objeto;
 
+SELECT * FROM objeto 
+INTO OUTFILE
+        '/var/lib/mysql-files/objeto.csv'
+        FIELDS TERMINATED BY ','
+        OPTIONALLY ENCLOSED BY '\"'
+        LINES TERMINATED BY '\n';
 
+SHOW VARIABLES LIKE "secure_file_priv";
 
