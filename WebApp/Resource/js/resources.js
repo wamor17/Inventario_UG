@@ -99,7 +99,7 @@ function ShowCategoriesAndResources(){
             items = "<p class='no-elements-collections black-text'> Sin elementos en esta categoría <i class='material-icons right'></i></p>";
 
         components = components + "<li>";
-        components = components +     "<div class='collapsible-header'><i class='material-icons'>"+icon+"</i><strong>" + Data_Categories[i].nombre + " ("+counter+")" + "</strong></div>" +
+        components = components +     "<div class='collapsible-header'><i class='material-icons'>"+icon+"</i><strong>" + Data_Categories[i].nombre + " ("+counter+")" + "</strong> </div>" +
                                         "<div class='collapsible-body'>" + //text_box + 
                                             "<ul class='collection'>" + items + "</ul>"+
                                         "</div>"+
