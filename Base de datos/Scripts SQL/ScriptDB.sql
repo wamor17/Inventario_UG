@@ -2,6 +2,13 @@ drop database if exists inventarioUG;
 create database inventarioUG; 
 use  inventarioUG;
 
+CREATE TABLE IF NOT EXISTS login (
+id_login int NOT NULL auto_increment,
+correo varchar(100) NOT NULL,
+password varchar(100),
+primary key(id_login)
+);
+
 CREATE TABLE IF NOT EXISTS puesto (
 id_puesto int NOT NULL auto_increment,
 nombre varchar(50) NOT NULL,
@@ -34,6 +41,7 @@ foreign key(id_sede) references sede(id_sede)
 
 CREATE TABLE IF NOT EXISTS empleado (
 id_empleado int NOT NULL auto_increment,
+id_login int NOT NULL,
 id_puesto int NOT NULL,
 id_entidad int NOT NULL,
 nombre varchar(50) NOT NULL,
@@ -42,6 +50,7 @@ ape_materno varchar(50) NOT NULL,
 NUE int NOT NULL,
 fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 primary key(id_empleado),
+foreign key(id_login) references login(id_login),
 foreign key(id_puesto) references puesto(id_puesto),
 foreign key(id_entidad) references entidad(id_entidad)
 );
